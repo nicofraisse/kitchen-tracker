@@ -15,11 +15,24 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.21.1",
+    "binance-fiat-widget": "^1.1.14",
+    "formik": "^2.2.6",
     "gatsby": "^2.32.3",
     "gatsby-plugin-offline": "^3.10.1",
     "gatsby-plugin-sass": "^3.2.0",
+    "postcss": "^7.0.35",
     "react": "^16.13.1",
+    "react-currency-input-field": "^3.3.0",
     "react-dom": "^16.13.1",
-    "sass": "^1.32.7"
+    "react-select": "^4.1.0",
+    "sass": "^1.32.7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "gatsby-plugin-postcss": "^3.7.0"
   }
 }

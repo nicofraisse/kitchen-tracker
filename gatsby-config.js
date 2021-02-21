@@ -1,6 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: "kitchen-tracker",
+    title: 'kitchen-tracker',
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-offline"],
-};
+  plugins: [
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require('tailwindcss'),
+          require('./tailwind.config.js'), // Optional: Load custom Tailwind CSS configuration
+        ],
+      },
+    },
+    'gatsby-plugin-offline',
+    'gatsby-plugin-postcss',
+  ],
+}
